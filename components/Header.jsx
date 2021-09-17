@@ -60,13 +60,13 @@ function Header({placeholder}) {
                 txt-sm text-gray-600 placeholder-gray-400"
                 type="text"
                 value={inputSearch} onChange={e=> setInputSearch(e.target.value)}/>
-                <SearchIcon className="hidden md:inline-flex flex-shrink-0 flex-grow-0 h-8 bg-red-400
-                text-white rounded-full p-2 md:mx-2 cursor-pointer hover:scale-105 transition duration-200"></SearchIcon>
+               {!inputSearch && <SearchIcon className="hidden md:inline-flex flex-shrink-0 flex-grow-0 h-8 bg-red-400
+                text-white rounded-full p-2 md:mx-2 cursor-pointer hover:scale-105 transition duration-200"></SearchIcon>}
             </div>
             <div className="flex space-x-4 text-gray-500
             items-center justify-end">
                 <p className="hidden md:inline-flex cursor-pointer">Sé anfitrión</p>
-                <GlobeAltIcon className="hidden sm:inline-flexh-6 cursor-pointer"></GlobeAltIcon>
+                <GlobeAltIcon className="hidden sm:inline-flex h-6 cursor-pointer"></GlobeAltIcon>
                 <div className="flex items-center
                 border-2 rounded-full p-2 space-x-2 hover:shadow-lg transition duration-200">
                     <MenuIcon className="h-6 cursor-pointer"></MenuIcon>
